@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/ppic_frag_doctor"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_launcher_foreground"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/name_frag_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/app_name"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ppic_frag_doctor"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:maxEms="10"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/specialisation_frag_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            app:layout_constraintTop_toBottomOf="@id/name_frag_doctor"
+            app:layout_constraintStart_toStartOf="@id/name_frag_doctor"
+            android:maxEms="8"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/experience_frag_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            app:layout_constraintTop_toTopOf="@id/specialisation_frag_doctor"
+            app:layout_constraintStart_toEndOf="@id/specialisation_frag_doctor"
+            android:maxEms="4"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:id="@+id/city_frag_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/app_name"
+            app:layout_constraintStart_toStartOf="@id/name_frag_doctor"
+            app:layout_constraintTop_toBottomOf="@id/specialisation_frag_doctor"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:id="@+id/booknow_frag_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bookNow"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/viewprofile_frag_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/viewProfile"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintTop_toTopOf="@id/booknow_frag_doctor"
+            app:layout_constraintEnd_toStartOf="@id/booknow_frag_doctor"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

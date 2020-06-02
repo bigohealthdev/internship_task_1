@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView_frag_appointments"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/ic_launcher_foreground"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/name_frag_appointments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/imageView_frag_appointments"
+            app:layout_constraintStart_toEndOf="@id/imageView_frag_appointments"
+            android:layout_margin="10dp"
+            android:maxEms="10"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="@string/appointments" />
+
+        <TextView
+            android:id="@+id/specialisation_frag_appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/name_frag_appointments"
+            app:layout_constraintStart_toStartOf="@id/name_frag_appointments"
+            android:maxEms="10"
+            android:maxLines="1"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:text="@string/appointments" />
+
+        <TextView
+            android:id="@+id/patientname_frag_appointments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/specialisation_frag_appointment"
+            app:layout_constraintStart_toStartOf="@id/name_frag_appointments"
+            android:maxEms="10"
+            android:maxLines="2"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:text="@string/appointments" />
+
+        <TextView
+            android:id="@+id/address_frag_appointments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/patientname_frag_appointments"
+            app:layout_constraintStart_toStartOf="@id/name_frag_appointments"
+            android:maxEms="10"
+            android:maxLines="2"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:text="@string/appointments" />
+
+        <TextView
+            android:id="@+id/datetime_frag_appointments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/address_frag_appointments"
+            app:layout_constraintStart_toStartOf="@id/name_frag_appointments"
+            android:maxEms="10"
+            android:maxLines="2"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:text="@string/appointments" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

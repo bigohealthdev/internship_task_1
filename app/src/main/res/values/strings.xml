@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BigOHealth</string>
+    <string name="doctors">Doctors</string>
+    <string name="viewProfile">View Profile</string>
+    <string name="bookNow">Book Now</string>
+    <string name="about">About</string>
+    <string name="timingandfees">Timings and Fees</string>
+    <string name="awards">Awards</string>
+    <string name="address">Address</string>
+    <string name="appointments">Appointments</string>
+</resources>
